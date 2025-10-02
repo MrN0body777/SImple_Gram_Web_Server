@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E gram - Frontend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>E gram</h1>
+            <div id="auth-status">
+                <!-- User status will be shown here -->
+            </div>
+        </header>
+
+        <main>
+            <!-- Login / Signup Section -->
+            <section id="auth-section">
+                <div class="form-container">
+                    <h2>Login</h2>
+                    <form id="login-form">
+                        <input type="text" id="login-username" placeholder="Username" required>
+                        <input type="password" id="login-password" placeholder="Password" required>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+                <div class="form-container">
+                    <h2>Sign Up</h2>
+                    <form id="signup-form">
+                        <input type="text" id="signup-username" placeholder="Username" required>
+                        <input type="email" id="signup-email" placeholder="Email" required>
+                        <input type="password" id="signup-password" placeholder="Password" required>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Main Feed Section (Hidden by default) -->
+            <section id="feed-section" class="hidden">
+                <h2>Create a New Post</h2>
+                <form id="post-form">
+                    <input type="text" id="post-title" placeholder="Post Title" required>
+                    <textarea id="post-content" placeholder="Paste your homework here..." required></textarea>
+                    <button type="submit">Post</button>
+                </form>
+
+                <hr>
+
+                <h2>Homework Feed</h2>
+                <div id="posts-container">
+                    <!-- Posts will be loaded here -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
